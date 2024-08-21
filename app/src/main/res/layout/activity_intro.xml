@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.IntroActivity">
+
+<com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/lottieanimatinoview"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    app:lottie_rawRes="@raw/introimage"
+    app:lottie_loop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="170dp"/>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#283747"
+        android:text="@string/intro_title"
+        android:layout_below="@id/lottieanimatinoview"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse the latest style from top brands"
+        android:textColor="#283747"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textview1"/>
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get personalized Recommendations"
+        android:textColor="#283747"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textview2"/>
+
+    <TextView
+        android:id="@+id/textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enjoy fast,free shipping"
+        android:textColor="#283747"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textview3"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startbtn"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        style="@android:style/Widget.Button"
+        android:text="Let's get Started"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:textColor="@color/white"
+        android:background="@drawable/red_bg"
+        android:layout_below="@+id/textview4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startbtn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/intro_signin" />
+    
+
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Shopping App</string>
+    <string name="intro_title">Step into your <font color="#283747">style\nA world of Shoes</font></string>
+    <string name="intro_signin">Already have an account? <font color="#283747">Sign In</font></string>
+</resources>
